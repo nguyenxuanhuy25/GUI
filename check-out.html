@@ -1,0 +1,735 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+
+    <!--========= Required meta tags =========-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Check out</title>
+
+    <!--====== Favicon ======-->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="images/x-icon" />
+
+    <!--====== CSS Here ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lightcase.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.js">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="shortcut icon" href="img/logo2.png">
+
+</head>
+ <style>
+    .navbar a{
+        text-decoration: none;
+    }
+    .links a{
+        text-decoration: none;
+    }
+    .footer a{
+        text-decoration: none;
+    }
+    #wrapper{
+    width: 960px;
+    margin: auto;
+}
+#backtop{
+    width: 50px;
+    height: 50px;
+    background-color: #D3AD7F;
+    color: floralwhite; 
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    border: 30%;
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    cursor: pointer;
+}
+#backtop:hover{
+    background-color: #D3AD7F;
+}
+.button-icon-b{
+    font-size: 20px
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+ </style>
+<body>
+<!-- header sections starts -->
+<header class="header">
+
+    <!-- logo -->
+    <a href="" class="logo">
+        <img src="img/logo2.png" alt="">
+    </a>
+
+        <!-- nav -->
+        <nav class="navbar">
+        <a href="index.html"> Trang Chủ</a>
+        <a href="About.html"> Về Chúng Tôi</a>
+        <a href="Menu.html"> Thực Đơn</a>
+        <a href="Product.html">Sản Phẩm</a>
+        <a href="Riview.html"> Đánh Giá</a>
+        <a href="Contact.html"> Liên Hệ</a>
+        <a href="Blog.html">blogs</a>
+        <a href="check-out.html"></a>
+    </nav>
+
+    <!-- icon -->
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <a href="DN.html"><div class="fa-solid fa-user"></div></a>
+        <div class="fas fa-bars" id="menu-btn"></div>      
+    </div>
+
+    <div class="search-form">
+        <input type="search" name="" id="search-box" placeholder="Search anything here...">
+        <label for="search-box" class='fas fa-search'></label>
+    </div>
+
+    
+
+    <!-- cart item -->
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span> 
+            <img src="img/cart-item-1.png" alt="">
+                <div class="content">
+                    <h3>Hạt cafe Cherry</h3>
+                    <div class="price">80.000 VND</div>  
+                </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="img/cart-item-2.png" alt="">
+                <div class="content">
+                    <h3>Cafe hạt Robusta</h3>
+                    <div class="price">$100.000 VND</div>  
+                </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>  
+            <img src="img/cart-item-3.png" alt="">
+                <div class="content">
+                    <h3>cafe hạt Arabica</h3>
+                    <div class="price">90.000 VND</div>  
+                </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="img/cart-item-4.png" alt="">
+                <div class="content">
+                    <h3>Hạt cafe Culi</h3>
+                    <div class="price">120.000 VND</div>  
+                </div>
+        </div>
+        <a href="check-out.html" class="btn"> Thanh Toán</a> 
+    </div>    
+</header>
+
+<!-- header sections ends -->
+
+    <!-- side info for mobile view -->
+    <aside class="side-info-wrapper mm-only">
+        <nav>
+            <div class="nav" id="nav-tab" role="tablist">
+                <a class="nav-link active" id="menu-tab-1-tab" data-bs-toggle="tab"
+                    href="#menu-tab-1" role="tab" aria-controls="menu-tab-1"
+                    aria-selected="true">Menu</a>
+                <a class="nav-link" id="menu-tab-2-tab" data-bs-toggle="tab" href="#menu-tab-2"
+                    role="tab" aria-controls="menu-tab-2" aria-selected="false">Info</a>
+            </div>
+        </nav>
+        <div class="side-info__wrapper d-flex align-items-center justify-content-between">
+            <div class="side-info__logo">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo-black.png" alt="logo">
+                </a>
+            </div>
+            <div class="side-info__close">
+                <a href="javascript:void(0);"><i class="fal fa-times"></i></a>
+            </div>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="menu-tab-1" role="tabpanel"
+                aria-labelledby="menu-tab-1-tab">
+                <div class="mobile-menu"></div>
+            </div>
+            <div class="tab-pane fade" id="menu-tab-2" role="tabpanel"
+                aria-labelledby="menu-tab-2-tab">
+                <div class="side-info">
+                    <div class="side-info__content mb-35">
+                        <h4 class="title mb-5">About us</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  nisi ut aliquip ex ea commodo consequat.</p>
+                        <a class="site-btn mt-20" href="contact.html">Contact us</a>
+                    </div>
+                    <div class="contact__info--wrapper mt-15">
+                        <h4 class="title mb-10">Contact us</h4>
+                        <ul class="contact__info list-unstyled">
+                            <li>
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <p>Bowery St., New York, NY 10013, USA</p>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-phone"></i></span>
+                                <p>+1255-568-6523</p>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-envelope-open-text"></i></span>
+                                <p>information@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-links mt-20 d-flex justify-content-start align-items-center">
+                        <a href="#0"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                        <a href="#0"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- side info for desktop view -->
+    <aside class="side-info-wrapper show-all">
+        <div class="side-info__wrapper d-flex align-items-center justify-content-between">
+            <div class="side-info__logo">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo-black.png" alt="logo">
+                </a>
+            </div>
+            <div class="side-info__close">
+                <a href="javascript:void(0);"><i class="fal fa-times"></i></a>
+            </div>
+        </div>
+        <div class="side-info">
+            <div class="side-info__content mb-35">
+                <h4 class="title mb-5">About us</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  nisi ut aliquip ex ea commodo consequat.</p>
+                <a class="site-btn mt-20" href="contact.html">Contact us</a>
+            </div>
+            <div class="contact__info--wrapper mt-15">
+                <h4 class="title mb-10">Contact us</h4>
+                <ul class="contact__info list-unstyled">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>Bowery St., New York, NY 10013, USA</p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone"></i></span>
+                        <p>+1255-568-6523</p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope-open-text"></i></span>
+                        <p>information@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-links mt-20 d-flex justify-content-start align-items-center">
+                <a href="#0"><i class="fab fa-facebook-f"></i></a>
+                <a href="#0"><i class="fab fa-twitter"></i></a>
+                <a href="#0"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#0"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- cart list -->
+    <aside class="cart-bar-wrapper">
+        <div class="cart-bar__close">
+            <a class="d-flex align-items-center justify-content-center" href="javascript:void(0);"><i class="fal fa-times"></i></a>
+        </div>
+        <div class="cart-bar">
+            <h4 class="cart-bar__title">Cart Items - <span>4</span></h4>
+            <div class="cart-bar__lists">
+                <div class="cart-bar__item position-relative d-flex">
+                    <div class="thumb">
+                        <img src="assets/images/top-grade/tg-1.png" alt="image_not_found">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">
+                            <a href="product-details.html">Rorem ipsum dolor sit amet.</a>
+                        </h4>
+                        <span class="price">$19.00</span>
+                        <a href="#0" class="remove"><i class="fal fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="cart-bar__item position-relative d-flex">
+                    <div class="thumb">
+                        <img src="assets/images/top-grade/tg-2.png" alt="image_not_found">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">
+                            <a href="product-details.html">Rorem ipsum dolor sit amet.</a>
+                        </h4>
+                        <span class="price">$36.00</span>
+                        <a href="#0" class="remove"><i class="fal fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="cart-bar__item position-relative d-flex">
+                    <div class="thumb">
+                        <img src="assets/images/top-grade/tg-3.png" alt="image_not_found">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">
+                            <a href="product-details.html">Rorem ipsum dolor sit amet.</a>
+                        </h4>
+                        <span class="price">$20.00</span>
+                        <a href="#0" class="remove"><i class="fal fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="cart-bar__item position-relative d-flex">
+                    <div class="thumb">
+                        <img src="assets/images/top-grade/tg-4.png" alt="image_not_found">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">
+                            <a href="product-details.html">Rorem ipsum dolor sit amet.</a>
+                        </h4>
+                        <span class="price">$20.00</span>
+                        <a href="#0" class="remove"><i class="fal fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-bar__subtotal d-flex align-items-center justify-content-between">
+                <span>Sub Total:</span>
+                <span>$87.00</span>
+            </div>
+            <div class="btns d-flex align-items-center justify-content-center">
+                <a href="cart.html" class="site-btn">View Cart</a>
+                <a href="checkout.html" class="site-btn site-btn__borderd">Checkout</a>
+            </div>
+        </div>
+    </aside>
+    <div class="overlay"></div>
+
+    <main>
+        
+
+        <!-- cart area start -->
+        <div class="checkout-area pt-120 pb-120" >
+            <div class="container" style="background-color: #D3AD7F; margin: auto;">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="cart-wrapper checkout-wrapper" >
+                            <div class="row">
+                                <div class="col-xl-9">
+                                    <div class="checkout-top">
+                                        <h4 class="title">Phương Thức Thanh Toán</h4>
+                                        <nav>
+                                            <div class="nav" id="shop-filter-tab" role="tablist">
+                                                <a class="nav-link active" id="pd-1-tab" data-bs-toggle="tab" href="#pd-1" role="tab" aria-controls="pd-1" aria-selected="true">
+                                                    Thanh Toán Bằng Card
+                                                </a>
+                                                <a class="nav-link" id="pd-2-tab" data-bs-toggle="tab" href="#pd-2" role="tab" aria-controls="pd-2" aria-selected="true">
+                                                    Thanh Toán Chuyển Khoản
+                                                </a>
+                                                <a class="nav-link" id="pd-3-tab" data-bs-toggle="tab" href="#pd-3" role="tab" aria-controls="pd-3" aria-selected="true">
+                                                    Thanh Toán Tiền Mặt
+                                                </a>
+                                            </div>
+                                        </nav>
+
+                                        <div class="tab-content" id="pdContent">
+                                            <div class="tab-pane fade show active" id="pd-1" role="tabpanel" aria-labelledby="pd-1-tab">
+                                                <div class="cart-form">
+                                                    <form action="checkout.html">
+                                                        <div class="row">
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="fname">Tên Lót*</label>
+                                                                    <input type="text" name="fname" id="fname" placeholder="Tên Lót">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="lname">Họ Tên*</label>
+                                                                    <input type="text" name="lname" id="lname" placeholder=" Họ Tên">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="cname">Tên Công Ty (Nếu có)</label>
+                                                                    <input type="text" name="cname" id="cname" placeholder="Tên Công Ty">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="rname">Tên Quốc Gia / Khu Vực*</label>
+                                                                    <input type="text" name="rname" id="rname" placeholder="Quốc Gia">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="hname">Địa Chỉ *</label>
+                                                                    <input type="text" name="hname" id="hname" placeholder="Số Nhà và Tên Đường">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="tname">Thành Phố*</label>
+                                                                    <input type="text" name="tname" id="tname">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="zname">Mã Bưu Chính (Nếu Có)*</label>
+                                                                    <input type="text" name="zname" id="zname">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="tel">Số Điện Thoại*</label>
+                                                                    <input type="tel" name="tel" id="tel" placeholder="Nhập Số Điện Thoại...">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="email"> Địa Chỉ Email*</label>
+                                                                    <input type="email" name="email" id="email" placeholder="Nhập Địa Chỉ Email">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="ainfo">Thông tin thêm*</label>
+                                                                    <textarea name="ainfo" id="ainfo" placeholder="Ghi Chú thích thêm !"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pd-2" role="tabpanel" aria-labelledby="pd-2-tab">
+                                                <div class="cart-form">
+                                                    <form action="checkout.html">
+                                                        <div class="row">
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="fname2">Tên Lót*</label>
+                                                                    <input type="text" name="fname2" id="fname2" placeholder="Tên Lót">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="lname2">Họ Tên*</label>
+                                                                    <input type="text" name="lname2" id="lname2" placeholder="Họ Tên">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="cname2">Cong Ty (nếu có)</label>
+                                                                    <input type="text" name="cname2" id="cname2" placeholder="Company Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="rname2"> Quốc Gia/ Khu Vực *</label>
+                                                                    <input type="text" name="rname2" id="rname2" placeholder="Company Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="hname2">Tên Đường*</label>
+                                                                    <input type="text" name="hname2" id="hname2" placeholder="Số Nhà và Tên Đường">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="tname2">Thành Phố *</label>
+                                                                    <input type="text" name="tname2" id="tname2">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="zname2">mã bưu cục(nếu có)*</label>
+                                                                    <input type="text" name="zname2" id="zname2">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="tel2">số điện thoại</label>
+                                                                    <input type="tel" name="tel2" id="tel2" placeholder="Nhập Số điện thoại...">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="email2"> Địa chỉ Email</label>
+                                                                    <input type="email" name="email2" id="email2" placeholder="Nhập địa chỉ email...">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="ainfo2">Thông tin thêm*</label>
+                                                                    <textarea name="ainfo2" id="ainfo2" placeholder="Ghi chú thích thêm !"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pd-3" role="tabpanel" aria-labelledby="pd-3-tab">
+                                                <div class="cart-form">
+                                                    <form action="checkout.html">
+                                                        <div class="row">
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="fname3">First Name*</label>
+                                                                    <input type="text" name="fname3" id="fname3" placeholder="First Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="lname3">Last Name*</label>
+                                                                    <input type="text" name="lname3" id="lname3" placeholder="Last Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="cname3">Company name (optional)</label>
+                                                                    <input type="text" name="cname3" id="cname3" placeholder="Company Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="rname3">Country / Region *</label>
+                                                                    <input type="text" name="rname3" id="rname3" placeholder="Company Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="hname3">Street address *</label>
+                                                                    <input type="text" name="hname3" id="hname3" placeholder="House number & State">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="tname3">Town / City *</label>
+                                                                    <input type="text" name="tname3" id="tname3">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="zname3">Postcode / ZIP (optional)*</label>
+                                                                    <input type="text" name="zname3" id="zname3">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="tel3">Phone</label>
+                                                                    <input type="tel" name="tel3" id="tel3" placeholder="Enter your number..">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="email3">Email</label>
+                                                                    <input type="email" name="email3" id="email3" placeholder="Enter your mail..">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="from-group mt-30">
+                                                                    <label for="ainfo3">Additional Information*</label>
+                                                                    <textarea name="ainfo3" id="ainfo3" placeholder="Note about your order, Special note for delevery !"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-8">
+                                            <div class="cart-total mt-45 text-end">
+                                                <h2 class="title text-start">Tổng Tiền</h2>
+                                                <div class="ct-sub">
+                                                    <span>Hạt Cafe Cherry</span>
+                                                    <span>80.000 VND</span>
+                                                </div>
+                                                <div class="ct-sub">
+                                                    <span>Cafe Hạt Robusta</span>
+                                                    <span>100.000 VND</span>
+                                                </div>
+                                                <div class="ct-sub">
+                                                    <span>Cafe Hạt Arabica</span>
+                                                    <span>90.000 VND</span>
+                                                </div>
+                                                <div class="ct-sub ct-sub__total">
+                                                    <span>Tổng</span>
+                                                    <span>370.000 VND</span>
+                                                </div>
+                                                <a href="#0" class="site-btn">Kiểm Tra</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cart area end -->
+
+
+    </main>
+
+    <!-- footer sections starts -->
+
+<section class="footer" id="footer">
+    <div class="share">
+        <a href="" class="fab fa-facebook-f"></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="" class="fab fa-instagram"></a>
+        <a href="" class="fab fa-linkedin"></a>
+        <a href="" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="index.html"> Trang Chủ</a>
+        <a href="About.html"> Về Chúng tôi</a>
+        <a href="Menu.html"> Thực Đơn</a>
+        <a href="Product.html"> Sản Phẩm</a>
+        <a href="Riview.html">Đánh Giá</a>
+        <a href="Contact.html">Liên Hệ</a>
+        <a href="Blog.html">Blog</a>
+    </div>
+    <a style="text-decoration: none;" href="https://xpressrow.com/html/cafena/cafena/index.html#" class="credit" >created by <span>Cafena</span> | all right reserve </a>
+
+    <!-- chat ngay  -->
+    <!-- <div id="wrapper">
+        <div class="list-button"> 
+            <a href="" class="button messenger">
+                <span class="button-icon">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </span>
+                <span class="button-text">
+                    chat ngay
+                </span>              
+            </a>
+        </div>
+    </div> -->
+
+    <!-- ---chat zalo --- -->
+         <a href="https://chat.zalo.me/?phone=SĐT_Của_Bạn" id="linkzalo" target="_blank" rel="noopener noreferrer"><div id="fcta-zalo-tracking" class="fcta-zalo-mess">
+            <span id="fcta-zalo-tracking">Chat hỗ trợ</span></div>
+            <div class="fcta-zalo-vi-tri-nut">
+            <div id="fcta-zalo-tracking" class="fcta-zalo-nen-nut">
+            <div id="fcta-zalo-tracking" class="fcta-zalo-ben-trong-nut">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.1 436.6">
+            <path fill="currentColor" class="st0" d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z"></path></svg>
+            </div>
+            <div id="fcta-zalo-tracking" class="fcta-zalo-text">Chat ngay</div>
+            </div></div>
+        </a>
+            
+            <style>
+            @keyframes zoom{0%{transform:scale(.5);opacity:0}50%{opacity:1}to{opacity:0;transform:scale(1)}}@keyframes lucidgenzalo{0% {to{transform:rotate(-25deg)}}50%{transform:rotate(25deg)}}.jscroll-to-top{bottom:100px}.fcta-zalo-ben-trong-nut svg path{fill:#fff}.fcta-zalo-vi-tri-nut{position:fixed;bottom:24px;right:20px;z-index:999}.fcta-zalo-nen-nut,div.fcta-zalo-mess{box-shadow:0 1px 6px rgba(0,0,0,.06),0 2px 32px rgba(0,0,0,.16)}.fcta-zalo-nen-nut{width:50px;height:50px;text-align:center;color:#fff;background:#0068ff;border-radius:50%;position:relative}.fcta-zalo-nen-nut::after,.fcta-zalo-nen-nut::before{content:"";position:absolute;border:1px solid #0068ff;background:#0068ff80;z-index:-1;left:-20px;right:-20px;top:-20px;bottom:-20px;border-radius:50%;animation:zoom 1.9s linear infinite}.fcta-zalo-nen-nut::after{animation-delay:.4s}.fcta-zalo-ben-trong-nut,.fcta-zalo-ben-trong-nut i{transition:all 1s}.fcta-zalo-ben-trong-nut{position:absolute;text-align:center;width:60%;height:60%;left:10px;bottom:25px;line-height:70px;font-size:25px;opacity:1}.fcta-zalo-ben-trong-nut i{animation:lucidgenzalo 1s linear infinite}.fcta-zalo-nen-nut:hover .fcta-zalo-ben-trong-nut,.fcta-zalo-text{opacity:0}.fcta-zalo-nen-nut:hover i{transform:scale(.5);transition:all .5s ease-in}.fcta-zalo-text a{text-decoration:none;color:#fff}.fcta-zalo-text{position:absolute;top:6px;text-transform:uppercase;font-size:12px;font-weight:700;transform:scaleX(-1);transition:all .5s;line-height:1.5}.fcta-zalo-nen-nut:hover .fcta-zalo-text{transform:scaleX(1);opacity:1}div.fcta-zalo-mess{position:fixed;bottom:29px;right:58px;z-index:99;background:#fff;padding:7px 25px 7px 15px;color:#0068ff;border-radius:50px 0 0 50px;font-weight:700;font-size:15px}.fcta-zalo-mess span{color:#0068ff!important}
+            span#fcta-zalo-tracking{font-family:Roboto;line-height:1.5}.fcta-zalo-text{font-family:Roboto}
+            </style>
+            
+         
+</section>
+   
+<!-- backtop -->
+<div id="wrapper">       
+    <div id="backtop">
+      <span class="button-icon-b"> 
+        <i class="fa-solid fa-chevron-down fa-rotate-180"></i>
+      </span> 
+    </div>
+</div>
+<!-- footer sections ends -->
+
+    <!--========= JS Here =========-->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrollwatch.js"></script>
+    <script src="assets/js/sticky-header.js"></script>
+    <script src="assets/js/waypoint.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfpGBFn5yRPvJrvAKoGIdj1O1aO9QisgQ"></script>
+    <script src="assets/js/jquery-ui-slider-range.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+   $(window).scroll(function() {
+     if($(this).scrollTop()) {
+       $('#backtop').fadeIn();
+     }else{
+       $('#backtop').fadeOut();
+     }
+ });
+ $('#backtop').click(function(){
+   $('html, body').animate({ 
+     scrollTop:0 
+   }, 500);
+ });
+ });
+</script>
+<script>let navbar = document.querySelector('.navbar');
+
+    document.querySelector('#menu-btn').onclick = () => {
+        navbar.classList.toggle('active');
+        cartItem.classList.remove('active');
+        searchForm.classList.remove('active');
+    }
+    
+    let cartItem = document.querySelector('.cart-items-container');
+    
+    document.querySelector('#cart-btn').onclick = () => {
+        cartItem.classList.toggle('active');   
+        navbar.classList.remove('active');
+        searchForm.classList.remove('active');
+        
+    }
+    
+    let searchForm = document.querySelector('.search-form');
+    
+    document.querySelector('#search-btn').onclick = () => {
+        searchForm.classList.toggle('active');
+        cartItem.classList.remove('active');
+        navbar.classList.remove('active');
+    }
+    
+    window.onscroll = () => {
+        navbar.classList.remove('active');
+        cartItem.classList.remove('active');
+        searchForm.classList.remove('active');
+    }
+    </script>
+</html>

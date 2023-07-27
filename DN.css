@@ -1,0 +1,84 @@
+.container {
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 150px auto;
+  color: #fff;
+  max-width: 500px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #D3AD7F;
+  font-size: 40px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white; /* Thêm màu nền trắng cho input */
+  transition: all ease .1s; /* Thêm hiệu ứng transition */
+}
+
+input:focus {
+  background-color: #f5f5f5; /* Thay đổi màu nền khi input được focus */
+  outline: none; /* Loại bỏ viền xung quanh khi input được focus */
+}
+
+button {
+  padding: 10px;
+  background-color: #D3AD7F;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h4 {
+  color: #fff;
+  font-size: 15px;
+}
+
+.dk {
+  color: #45a049;
+}
+
+.dk:hover {
+  color: #D3AD7F;
+}
+
+/* Thêm media queries */
+@media only screen and (max-width: 600px) {
+  .container {
+      margin: 50px auto;
+      padding: 10px;
+  }
+  h2 {
+      font-size: 30px;
+  }
+  input, button {
+      font-size: 14px;
+  }
+}
